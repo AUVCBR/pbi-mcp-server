@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "pbi-mcp-server"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "pythonnet==3.1.0rc0",
+    "clr-loader>=0.2.6",
+    "pywin32>=306",
+]
+
+[project.scripts]
+pbi-mcp = "server:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

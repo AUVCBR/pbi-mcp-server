@@ -1,0 +1,17 @@
+{
+  "name": "pbi-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for Power BI .pbip files — connects Claude Code to local Power BI projects",
+  "bin": {
+    "pbi-mcp": "./scripts/run.js"
+  },
+  "scripts": {
+    "start": "node scripts/run.js",
+    "postinstall": "node scripts/install.js"
+  },
+  "keywords": ["power-bi", "mcp", "pbip", "claude", "pbi-mcp-server"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}
